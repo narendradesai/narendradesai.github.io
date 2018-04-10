@@ -71,6 +71,10 @@ window.addEventListener('mousemove', function(event) {
     mouse.y = event.y;
 })
 
+window.addEventListener('mouseout', function(){
+    mouse.x = undefined;
+    mouse.y = undefined;
+})
 window.addEventListener('resize', function() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
