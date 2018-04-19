@@ -156,7 +156,7 @@ function init() {
 
     for (let i = 0; i < 400; i++) {
         //let radius = randomIntFromRange(5,10);
-        let radius = 15;
+        let radius = randomIntFromRange(5,10);
         let x = randomIntFromRange(radius, canvas.width-radius);
         let y = randomIntFromRange(radius, canvas.height-radius);
         let color = randomColor(colors);
@@ -175,7 +175,7 @@ function init() {
         particles.push(new Particle(x, y, radius, color));
     
     }
-    //console.log(particles);
+    console.log(particles);
 }
 
 // Animation Loop
