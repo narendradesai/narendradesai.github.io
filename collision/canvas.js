@@ -125,7 +125,7 @@ Particle.prototype.update = function(particles) {
     }
 
     // mouse collision detection
-    if (distance(mouse.x, mouse.y, this.x, this.y) < 150 && this.opacity < 0.2) {
+    if (distance(mouse.x, mouse.y, this.x, this.y) < 100 && this.opacity < 0.2) {
         this.opacity += 0.1;
     } else if (this.opacity > 0) {
         this.opacity -= 0.02;
