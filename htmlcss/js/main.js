@@ -41,13 +41,32 @@ $(document).ready(function () {
     }, 100);
     setTimeout(showImage, 1000);
 
-    function changeLeftImage() {
-        // $('#left_1').removeClass('ln-vertical1');
-        // $('#left_1').addClass('ln-vertical1-bg-2');
-        $('#left_1').switchClass( "ln-vertical1", "ln-vertical1-bg-2", 0, "easeOutBounce" );
-        $('#left_2').switchClass( "ln-vertical2", "ln-vertical2-bg-2", 0, "easeOutBounce" );
-        //ln-vertical2-bg-2
+   
+    //change left image
+    var changeLeftImage = new Promise(function(resolve, reject) {
+        setTimeout((function() {
+            $('#left_1').switchClass( "ln-vertical1", "ln-vertical1-bg-2", 0, "easeOutBounce" );
+            $('#left_2').switchClass( "ln-vertical2", "ln-vertical2-bg-2", 0, "easeOutBounce" );
+            setTimeout(resolve,4000);
+         }), 4000);
+         
+    });
+    //transition to move left image out 
+    function removeLeftBgImage() {
+       $('#left_1').switchClass( "ln-vertical1-bg-2", "ln-vertical1-bg-2-remove-animate ");
+       $('#left_2').switchClass( "ln-vertical2-bg-2", "ln-vertical2-bg-2-remove-animate ");
+       $('#middle-text-id').switchClass("middle-text", "middle-text-remove");
+       $('#rn-h2-nested-2-one-id').removeClass("rn-h2-nested-2-one");
+       $('#rn-h2-nested-2-two-id').switchClass("rn-h2-nested-2-two", "rn-h2-nested-2-two-move-left");
+      $('#slider2-middle-bg-id').addClass('slider2-middle-bg');
+      $('#slider2-right-bg-id').addClass('slider2-right-bg');
+      $('#middle-img-text-id').switchClass('middle-img-text-pre','middle-img-text');
+      $('#left-bottom-img-text-id').switchClass('left-bottom-img-text-pre','left-bottom-img-text');
+      $('#right-bottom-img-text-id').switchClass('right-bottom-img-text-pre','right-bottom-img-text');
+      
     }
-    setTimeout(changeLeftImage, 4000);
-
+     //calling promise- change left image and the remove it
+    changeLeftImage.then(removeLeftBgImage);
+    
+    
 });

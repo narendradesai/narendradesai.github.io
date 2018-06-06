@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid layout</title>
+    <title>Animation</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -12,33 +12,12 @@
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/main.js"></script>
     <style>
-
-
-
-
-/*.circle-container {
-  @include on-circle($item-count: 8, $circle-size: 20em, $item-size: 6em); 
-  margin: 5em auto 0;
-  border: solid 5px tomato;
-
-  img { 
-    display: block; 
-    max-width: 100%; 
-    border-radius: 50%;
-    filter: grayscale(100%);
-    border: solid 5px tomato;
-    transition: .15s;
-     
-    
-  }
-}*/
-
-
 </style>
 </head>
 
 <body style="background-color:  #f7f2f2;">
-    <div class="middle-text">
+    <div class="outer">
+    <div id="middle-text-id" class="middle-text">
         Revolutionary Design
     </div>
     <div class="letterI">I</div>
@@ -47,12 +26,16 @@
     <div class="letterB">B</div>
     <div class="letterS">S</div>
     <div class="letterO">O</div>
+    <div class="left-top-logo header">
+            <img src="img/left-top-logo.png" alt="Cannot be displayed">
+    </div>
+    <div id="middle-img-text-id" class="middle-img-text-pre" >Food & Beverages</div>
+    <div id="left-bottom-img-text-id" class="left-bottom-img-text-pre">Hotels</div>
+    <div id="right-bottom-img-text-id" class="right-bottom-img-text-pre">Retails</div>
     <div class="grid-container">
         <div class="box1 left-nested">
             <div id="left_1" class="ln-vertical1 ln-v1-nested">
-                <div class="left-top-logo header">
-                    <img src="img/left-top-logo.png" alt="Cannot be displayed">
-                </div>
+                <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
@@ -66,7 +49,7 @@
             </div>
         </div>
         <div class="box2 right-nested">
-            <div class="rn-horizontal1 "><!--rn-h1-nested-->
+            <div class="rn-horizontal1 ">
                 <ul class="nav navbar-nav navbar-center header">
                     <li class="item"><a href="#">Works</a></li>
                     <li class="item"><a href="#">About</a></li>
@@ -80,21 +63,23 @@
             </div>
             <div class="rn-horizontal2 rn-h2-nested">
                 <div class="rn-h2-nested-1">
-                    <div>7</div>
-                    <div>11</div>
+                    <div id="slider2-middle-bg-id" ></div>
+                    <div></div>
                 </div>
                 <div class="rn-h2-nested-2">
-                    <div class="rn-h2-nested-2-one">8</div>
-                    <div class="rn-h2-nested-2-two">12</div>
+                    <div id="rn-h2-nested-2-one-id" class="rn-h2-nested-2-one"></div>
+                    <div id="rn-h2-nested-2-two-id" class="rn-h2-nested-2-two"></div>
                 </div>
             </div>
             <div class="rn-horizontal3 rn-h3-nested">
-                <div>15</div>
-                <div>16</div>
+                <div></div>
+                <div id="slider2-right-bg-id"></div>
             </div>
         </div>
     </div>
         
 
+        
+</div>
 </body>
 </html>
