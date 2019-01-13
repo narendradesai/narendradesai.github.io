@@ -1,0 +1,434 @@
+body {
+    padding-top: 150px;
+}
+
+#global-nav {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    height: 150px;
+    width: 100%;
+    background: #ffffff;
+    color: #000000;
+    line-height: 150px;
+    transition: height .5s, line-height .5s;
+}
+
+.site-title {
+    display: inline-block;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    /* width: 100%; */
+    height: 50px;
+}
+
+.scrolled-nav .site-title {
+    font-size: 16px;
+}
+
+.nav .wrapper {
+    line-height: 4rem;
+}
+
+.nav .top-icons {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 3;
+}
+
+.nav .top-icons ul {
+    display: contents;
+    list-style: none;
+}
+
+.nav .top-icons ul li {
+    padding: 0 2rem;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    list-style: none;
+    color: #000;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.nav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav li:not(:last-child) {
+        display: none;
+    }
+    .nav .top-icons {
+        display: none;
+    }
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .nav.responsive {
+        position: relative;
+    }
+    .nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav.responsive li {
+        display: block;
+    }
+    .nav.responsive .nav-list {
+        text-align: center;
+        color: #000000;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        margin-top: 1em;
+        line-height: 3rem;
+    }
+}
+
+.banner-section {
+    max-width: 100%;
+    position: relative;
+    justify-content: center;
+    margin: auto;
+}
+
+.banner-section .banner-content img {
+    width: 100%;
+}
+
+.banner-section .banner-slider .banner-title {
+    position: relative;
+    margin-left: 5%;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 5rem;
+    width: 40%;
+    height: 10rem;
+    overflow: hidden;
+}
+
+.banner-section .banner-control {
+    transition: 1s ease;
+    padding: 2rem 0;
+    position: absolute;
+    margin-top: 6%;
+    background: #fff;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner-section .banner-control .arrows {
+    float: right;
+    padding: 1rem;
+}
+
+/***************** OFIS Provide section *****************/
+
+.provides-section .heading {
+    margin: 4rem 0;
+}
+
+.provides-section .provides-title {
+    font-size: 3rem;
+    line-height: 2rem;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.provides-section .provides-subtitle {
+    font-size: 3rem;
+    color: #000000;
+}
+
+.provides-section .provides-area {
+    position: relative;
+    height: 500px;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+.provides-section .provides-area .learn-more-content {
+    display: none;
+}
+
+.provides-section .provides-area .text {
+    position: absolute;
+    color: #fff;
+    margin: 5rem 5rem 0 5rem;
+}
+
+.provides-section .provides-area .text .provides-area-title {
+    line-height: 4rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.provides-section .provides-area .text .provides-area-subtitle {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.provides-section .provides-area .text .provides-area-subtitle .learn-more {
+    line-height: 4rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.provides-section .provides-area .provides-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.provides-section .provides-area .provides-image img:hover {
+    transition: 1.5s ease;
+    width: 120%;
+    height: 120%;
+}
+
+/* OFIS Provide section Ends  */
+
+/***************** OFIS Serves section *****************/
+
+.servers-section .heading {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.servers-section .serves-title {
+    font-size: 3rem;
+    line-height: 2rem;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.servers-section .serves-subtitle {
+    font-size: 3rem;
+    color: #000000;
+}
+
+.servers-section .serves-col {
+    position: relative;
+    padding: 0px;
+    height: 700px;
+}
+
+.servers-section .serves-col .title-content {
+    position: absolute;
+}
+
+.servers-section .serves-col .serves-img {
+    width: 100%;
+    height: 100%;
+}
+
+.servers-section .serves-col img {
+    width: 100%;
+    height: 100%;
+}
+
+.servers-section .serves-col .title-content {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 0);
+    line-height: 5rem;
+    color: #fff;
+    z-index: 1;
+}
+
+.servers-section .serves-col .sub-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+
+.servers-section .serves-col .sub-content .sem-circle {
+    text-align: center;
+    margin-top: 50%;
+}
+
+.servers-section .serves-col .sub-content .text {
+    color: #fff;
+    text-align: center;
+    margin: lef;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.servers-section .serves-col .sub-content .sem-circle img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.servers-section #servesCol1:hover .sub-content {
+    transition: 1s;
+    opacity: 0.5;
+    background: red;
+}
+
+.servers-section #servesCol2:hover .sub-content {
+    transition: 1s;
+    opacity: 0.5;
+    background: blue
+}
+
+.servers-section #servesCol3:hover .sub-content {
+    transition: 1s;
+    opacity: 0.5;
+    background: orange;
+}
+
+.servers-section #servesCol4:hover .sub-content {
+    transition: 1s;
+    opacity: 0.5;
+    background: green;
+}
+
+.servers-section .serves-col .title-content .title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/***************** OFIS Serves section Ends *****************/
+
+/***************** OFIS Shares section *****************/
+
+.shares-section {
+    margin-top: 4rem;
+    background: grey;
+}
+
+.shares-section .heading {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.shares-section .shares-title {
+    font-size: 3rem;
+    line-height: 2rem;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.shares-section .shares-subtitle {
+    font-size: 3rem;
+    color: #000000;
+}
+
+.shares-section .shares-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.shares-section .shares-row .shares-left {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.shares-section .shares-row .shares-left .img1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.shares-section .shares-row .shares-left .images img {
+    width: 100%;
+    height: 100%;
+}
+
+.shares-section .shares-row .shares-left .images .insta {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.shares-section .shares-row .shares-left .images .soc-insta {
+    margin-right: 3rem;
+    float: right;
+}
+
+.shares-section .shares-row .shares-right .img1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.shares-section .shares-row .shares-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.shares-section .shares-row .shares-right .images .social {
+    display: grid;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.shares-section .shares-row .shares-right .img1 {
+    grid-column: 1/3;
+    grid-row: 1/4;
+}
+
+.shares-section .shares-row .shares-right .img1-content .icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.shares-section .shares-row .shares-right .img1-content {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.shares-section .shares-row .shares-right .img1-content .title {
+    color: #fff;
+    font-size: 1.5em;
+    width: 50%;
+}
+
+.shares-section .shares-row .shares-right .img1-content .description {
+    display: flex;
+}
+
+.shares-section .shares-row .shares-right .img1-content .description .icon-desc {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    color: #fff;
+}
+
+.shares-section .shares-right .social img {
+    width: 30px;
+    height: 30px;
+}
+
+.shares-section .shares-right .social {
+    border: 1px solid #fff;
+    background: #626161;
+    color: #fff;
+}
+
+/***************** OFIS Shares section ends *****************/
+
+footer {
+    margin-top: 4rem;
+    height: 200px;
+    background: #484848;
+    color: #fff;
+    padding-top: 40px;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>search</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home2-@2x" transform="translate(-1339.000000, -87.000000)" fill="#FFFFFF" stroke="#231F20" stroke-width="1.5">
+            <g id="Group-34" transform="translate(80.000000, 30.000000)">
+                <g id="Group-26" transform="translate(1157.000000, 57.000000)">
+                    <g id="search" transform="translate(102.000000, 0.000000)">
+                        <circle id="Oval" cx="8.5" cy="8.5" r="7.75"></circle>
+                        <path d="M14.5,14.5 L18,18" id="Line-2" stroke-linecap="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
